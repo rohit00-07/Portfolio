@@ -1,4 +1,4 @@
-Personal Portfolio
+vCard - Personal Portfolio
 
 # sidebar
 
