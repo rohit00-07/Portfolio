@@ -1505,12 +1505,29 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * #PORTFOLIO, BLOG
    */
-
-  .project-img, .blog-banner-box { border-radius: 16px; }
-
-  .blog-posts-list { gap: 30px; }
-
-  .blog-content { padding: 25px; }
+   .project-img {
+    width: 100%; /* Ensures the image container is responsive */
+    height: 200px; /* Fix the height of the image container */
+    display: flex; /* Enables flexbox to align and center the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden; /* Hides any parts of the image that overflow the container */
+    border-radius: 16px; /* Rounded corners for the container */
+  }
+  
+  .project-img img {
+    width: 100%; /* Makes the image fill the width of the container */
+    height: 100%; /* Makes the image fill the height of the container */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+  }
+  
+  .blog-posts-list {
+    gap: 30px; /* Space between blog posts */
+  }
+  
+  .blog-content {
+    padding: 25px; /* Adds padding around the content */
+  }
 
 
 
